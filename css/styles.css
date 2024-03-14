@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+.borde {
+    border: none;
+}
+
+.cuadre {
+    height: 40px;
+    width: 30px;
+}
+
+@media (min-width: 992px) {
+    .cuadre {
+        height: 120px;
+        width: 100px;
+        margin-top: -6rem;
+    }
+}
+
+.cuadre-sin {
+    height: 40px;
+    width: 30px;
+    margin-top: 0rem;
+}
+
+@media (min-width: 992px) {
+    .negativo {
+        width: 17px;
+        height: 30px;
+    }
+  }
+  
+.negativo {
+    margin-left: -0.6rem;
+}
+
+.fondo {
+    background-color: black;
+}
+@media (min-width: 1200px) {
+    .ancho {
+        width: 400px;
+    }
+    
+}
+@media (min-width: 1300px) {
+    .ancho {
+        width: 500px;
+    }
+    
+}
+
+@media (min-width: 1400px) {
+    .ancho {
+        width: 600px;
+    }
+    
+}
+
+.modificacion {
+    width: 300px !important;
+}
+
+.alto {
+    height: 71px;
+}
+
+.dropdown-item:hover {
+    color: #ca678e;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.fuente {
+    font-size: .85rem;
+}
+
+@media (min-width: 768px) {
+    .bordecitos {
+        border: none !important;
+    }
+}
+.chica {
+    font-size: .7rem;
+}
+
+.disabled {
+    pointer-events: none; 
+    cursor: default; 
+}
+
+.submenu:hover .dropdown-menu {
+    display: block !important;
+}

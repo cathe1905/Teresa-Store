@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teresa Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="build/css/style.css">
+        <link rel="stylesheet" href="css/styles.css">
+</head>
+    <div>
+        <header class="d-flex justify-content-between justify-content-lg-end">
+            <div class="d-flex d-inline">
+                <a  class="fs-7  mx-1 text-decoration-none" href="#">Tarjeta Teressa</a>
+                <a  class="fs-7  mx-1 text-decoration-none d-none d-lg-block" href="#">Inversionistas</a>
+                <a class="fs-7  mx-1 text-decoration-none"  href="#">Sostenibilidad</a>
+            </div>
+            <div>
+                <a href=""><i class="bi bi-twitter px-2 text-secondary mx-0 fs-5"></i></a>
+                <a href=""><i class="bi bi-facebook px-2 text-secondary mx-0 fs-5"></i></a>
+                <a href=""><i class="bi bi-whatsapp px-2 text-secondary mx-0 fs-5"></i></a>
+            </div>
+        </header>
+       
+    </div>
+
+    <body class="position-relative">
+
+        <aside class="fondo d-flex justify-content-center">
+            <img class="img-fluid" src="https://www.lapolar.cl/on/demandware.static/-/Sites/default/dwb524905a/navidad_231225_home_huincha-vip-1_generico_generico_l_0600_v1.png" alt="imagen promocional">
+        </aside>
+
+    <nav class="d-flex justify-content-between my-2 sticky-top bg-light">
+
+        <div class="dropdown navbar navbar-toggler navbar-light borde d-flex justify-content-lg-start flex-lg-row-reverse">
+            <a class="d-none d-md-inline  dropdown-toggle bg-white text-decoration-none text-dark ms-lg-5"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuLink">
+            Categorias <span class="navbar-toggler-icon "></span>
+            </a>
+            <a class="d-md-none dropdown-toggle bg-white text-decoration-none"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navbar-toggler-icon "></span>
+            </a>
+        
+            <ul class="dropdown-menu dropdown-menu-md-start offcanvas-sm offcanvas-start modificacion bg-light mt-lg-2 mt-0 pb-0 rounded-0" id="menu" aria-labelledby="dropdownMenuLink">
+                <div class="text-end"><button type="button" class="btn-close ps-5 my-3" data-bs-dismiss="offcanvas"></button></div>
+                
+            <li class="alto border-bottom border-top"><a class="dropdown-item pt-4 ps-4" id="men's clothing" href="#">Men's Clothing</a></li>
+            <li class="alto border-bottom"><a class="dropdown-item pt-4 ps-4" id="women's clothing" href="#">Women's Clothing</a></li>
+            <li class="alto border-bottom"><a class="dropdown-item pt-4 ps-4" id="jewelery" href="#">Jewerly</a></li>
+            <li class="alto border-bottom"><a class="dropdown-item pt-4 ps-4" id="electronics" href="#">Electronics</a></li>
+            <li class="alto border-bottom"><a class="dropdown-item pt-4 ps-4 disabled" href="http://www.google.com/" target="_blank">Kids</a></li>
+            <li class="alto border-bottom"><a class="dropdown-item pt-4 ps-4 disabled" href="#">Sports</a></li>
+            <li class="alto border-bottom"><a class="dropdown-item pt-4 ps-4 disabled" href="#">Room</a></li>
+            <li class="alto border-bottom border-bottom-md-0"><a class="dropdown-item pt-4 ps-4 disabled" href="#">Oulet online</a></li>
+            </ul>
+
+            <div id="logo" class="d-flex align-item-sm-center ms-2 cuadre"><img src="img/logo.png"  alt="logo"></div>
+        </div>
+
+        
+
+        <div class="navbar bg-body-tertiary d-none d-lg-flex flex-lg-row ">
+            <div class="container-fluid ">
+                <form class="d-none d-lg-flex flex-lg-row" role="search">
+                  <input class="form-control me-2 ancho" type="search" placeholder="¿Qué quieres buscar?" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div>
+        </div>
+
+        <div class="me-2 d-lg-flex">
+            <a href="#busqueda" class="d-lg-none fs-1 text-decoration-none mx-1 text-dark" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="busqueda">
+                <i class="bi bi-search"></i>
+            </a>
+            <a href="#" class="fs-1 text-decoration-none text-dark d-lg-flex">
+                <span><i class="bi bi-truck"></i></span>
+                <span class="d-none d-lg-flex fs-6 align-items-lg-center">Sigue tu orden</span>
+            </a>
+
+            <a href="#" class="fs-1 text-decoration-none text-dark d-lg-flex align-content-lg-center">
+                <span><i class="bi bi-person"></i></span>
+                <span class="d-none d-lg-flex fs-6 align-items-lg-center">Iniciar sesion/</span>
+                <span class="d-none d-lg-flex fs-6 align-items-lg-center">Registrarse</span>
+            </a>
+
+            
+        
+            <a href="#" class="text-decoration-none d-lg-flex" role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
+                <span><i class="bi bi-cart fs-1 text-dark unico"></i></span>
+                <span class="fs-6 bg-primary rounded-circle p-1 text-white negativo d-lg-flex align-self-lg-baseline count-product">0</span>
+            </a>
+              
+                <ul class="dropdown-menu nose">
+                    <table id="lista-carrito" class="u-full-width my-2">
+                        <thead>
+                            <tr>
+                                <th class="px-2 text-center imagen">Imagen</th>
+                                <th class="px-2 text-center nombre">Nombre</th>
+                                <th class="px-2 text-center precio">Precio</th>
+                                <th class="px-2 text-center cantidad">Cantidad</th>
+                                <th class="px-2 text-center"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <p id="total" class="text-end"></p>
+    
+                    <a href="#" id="vaciar-carrito" class="btn btn-secondary border-top d-flex justify-content-center">Vaciar Carrito</a>
+                </ul>             
+        </div>
+
+    </nav>
+
+    <div class="navbar bg-body-tertiary collapse" id="busqueda">
+        <div class="container-fluid bg-transparent d-inline">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 p-2" type="search" placeholder="¿Qué quieres buscar?" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+    </div>
+
+    <aside class="row">
+        <div class="col-6 bg-danger">
+            <img class="img-fluid" src="https://www.lapolar.cl/on/demandware.static/-/Library-Sites-lapolar-shared-library/default/dw43f498f3/images/2023/noviembre/23/black_231123_home_huincha-top-1a_generico_generico_l_0600_v1.png" alt="oulet">
+        </div>
+        <div class="col-6 bg-info">
+            <img class="img-fluid"  src="https://www.lapolar.cl/on/demandware.static/-/Library-Sites-lapolar-shared-library/default/dwf3757b1a/images/2023/diciembre/13/black_231123_home_huincha-top-1b_ninos_juguetes_l_0600_v1.png" alt="juguetes">
+        </div>
+    </aside>
+
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.lapolar.cl/on/demandware.static/-/Library-Sites-lapolar-shared-library/default/dwb0df1241/images/2024/enero/10/liqui_240110_home_bp--6_dormitorio_dormitorio_l_0600_v1.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.lapolar.cl/on/demandware.static/-/Library-Sites-lapolar-shared-library/default/dwa9c07b4f/images/2024/enero/10/liqui_240110_home_bp--5_tecnologia_computadores_l_0600_v1.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.lapolar.cl/on/demandware.static/-/Library-Sites-lapolar-shared-library/default/dw0299c34c/images/2023/diciembre/28/liqui_231228_home_bp--6_moda_moda_l_0600_v2.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <h2 class="text-center my-4 fw-bold text-uppercase" id="titulo">Nuestros Productos</h2>
+          <div class="container-fluid  d-flex justify-content-center my-2 me-1 ms-1 row" id="allProducts"></div>
+    </main>
+
+   <div class="d-md-flex my-5 d-none d-md-block row justify-content-center">
+    <a href="#" class="col-md-3"><img src="https://www.lapolar.cl/on/demandware.static/-/Library-Sites-lapolar-shared-library/default/dwcac97561/images/2022/junio/20/felizdiapapa_220616_home_informacion--1_generico_generico_l_0600_v1.jpg" loading="lazy" alt="horarios" class="img-fluid"></a>
+    <a href="#" class="col-md-3"><img src="https://www.lapolar.cl/on/demandware.static/-/Library-Sites-lapolar-shared-library/default/dw4ae41c4d/images/2022/junio/20/felizdiapapa_220616_home_informacion--2_generico_generico_l_0600_v1.jpg" loading="lazy" alt="cambios " class="img-fluid"></a>
+    <a href="#" class="col-md-3"><img src="https://www.lapolar.cl/on/demandware.static/-/Library-Sites-lapolar-shared-library/default/dw323d0729/images/2022/junio/20/felizdiapapa_220616_home_informacion--3_generico_generico_l_0600_v1.jpg" loading="lazy" alt="despacho " class="img-fluid"></a>
+   </div>
+
+   <div class=" d-md-none d-xs-block text-center" >
+    <a href="#" class=""><img src="https://www.lapolar.cl/on/demandware.static/-/Library-Sites-lapolar-shared-library/default/dw5774ee76/images/2022/junio/20/felizdiapapa_220616_home_informacion--1_generico_generico_s_0600_v1.jpg" loading="lazy" alt="horarios" class="img-fluid"></a>
+    <a href="#" class=""><img src="https://www.lapolar.cl/on/demandware.static/-/Library-Sites-lapolar-shared-library/default/dwab485fd4/images/2022/junio/20/felizdiapapa_220616_home_informacion--2_generico_generico_s_0600_v1.jpg" loading="lazy" alt="cambios " class="img-fluid"></a>
+    <a href="#" class=""><img src="https://www.lapolar.cl/on/demandware.static/-/Library-Sites-lapolar-shared-library/default/dw946c178c/images/2022/junio/20/felizdiapapa_220616_home_informacion--3_generico_generico_s_0600_v1.jpg" loading="lazy" alt="despacho " class="img-fluid"></a>
+   </div>
+
+   <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-3 font-bold" id="staticBackdropLabel"></h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer flex justify-content-between"></div>
+        </div>
+    </div>
+</div>
+
+
+    <footer class="container-fluid my-5"> 
+        <div class="text-center row justify-content-center my-5">
+            <a href="#" class="text-decoration-none text-dark col-6 col-md-3 col-lg-2" >
+                <span class="d-block"><i class="bi bi-truck fs-1"></i></span>
+                <span class="d-block">Sigue tu orden</span>
+            </a>
+            <a href="#" class="text-decoration-none text-dark col-6 col-md-3 col-lg-2">
+                <span class="d-block"><i class="bi bi-receipt-cutoff fs-1"></i></span>
+                <span class="d-block">Boleta electronica</span>
+            </a>
+            <a href="#" class="text-decoration-none text-dark col-6 col-md-3 col-lg-2">
+                <span class="d-block"><i class="bi bi-credit-card fs-1"></i></span>
+                <span class="d-block">Tarjeta Teressa</span>
+            </a>
+            <a href="#" class="text-decoration-none text-dark col-6 col-md-3 col-lg-2">
+                <span class="d-block"><i class="bi bi-headset fs-1"></i></span>
+                <span class="d-block">Servicio al cliente</span>
+            </a>
+        </div>
+
+        
+
+        <div class="row d-flex justify-content-center">
+            <form class="row col-md-5 align-content-center mb-3">
+                <legend class="">Recibe nuestras ofertas</legend>
+                <div class="col-12 form-group">
+                    <input class= "me-0 w-75 p-2 col-11 rounded-start" type="text" placeholder="Ingresa tu e-mail" aria-label="Search"><button class=" bg-danger border- rounded-end col-2 m-0 p-0 pb-1 " type="submit"><i class="bi bi-envelope text-light fs-3"></i></button>
+                </div>
+              
+            </form>
+
+            <div class="border-top border-bottom mt-4 mt-md-0 py-2 col-md-2 bordecitos " id="accordionExample">
+                <div class="accordion-item">
+                  <h2 id="headingOne">
+                    <button class="d-flex justify-content-between accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                     SERVICIO AL CLIENTE
+                    </button>
+                    
+                  </h2>
+                  <div id="collapseOne" class="rounded-md-0 accordion-collapse  collapse show d-md-block fuente" aria-labelledby="headingOne">
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2 ">Información de despacho</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Recuperar mi Boleta</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Preguntas frecuentes</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Guías de Compras</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Artículos</a>                 
+                 </div>
+                </div>
+            </div>
+
+            <div class="border-bottom border-md-0 py-2 col-md-2 bordecitos" id="accordionExample1">
+                <div class="accordion-item  ">
+                  <h2 class="" id="headingOne1">
+                    <button class="d-flex justify-content-between accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
+                        TARJETA TERESA
+                    </button>
+                    
+                  </h2>
+                  <div id="collapseOne1" class="rounded-md-0 collapse show d-md-block fuente" aria-labelledby="headingOne1" data-bs-parent="#accordionExample1">
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Pide tu Avance XL</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Comisión zero</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Seguros y asistencias</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Beneficios de Tarjeta Teresa</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Paga tu Tarjeta Teresa</a>                 </div>
+                </div>
+            </div>
+
+            <div class="border-md-0 mb-5 mb-md-0 py-2 col-md-2 bordecitos " id="accordionExample2">
+                <div class="accordion-item  ">
+                  <h2 class="" id="headingOne2">
+                    <button class="d-flex justify-content-between accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+                        TERESA STORE
+                    </button>
+                    
+                  </h2>
+                  <div id="collapseOne2" class="rounded-md-0 collapse show d-md-block fuente" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Nuestras Tiendas</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Sobre La Polar</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Sostenibilidad</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Canal de denuncias y ética</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Inversionistas</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Trabaja en Teresa Store</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Bases Legales</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Términos y condiciones</a>
+                    <a href="#" class="text-decoration-none text-dark d-flex mb-2">Comentarios de productos</a>                
+                </div>
+            </div>
+            
+
+        </div>
+        
+        <div class="text-center chica mt-5 border-top pt-4">
+            <p class="mb-0">Avda. Santa Clara 207, Huechuraba, Santiago. Empresas La Polar, © 2018. Todos los derechos reservados</p>
+            <p>VeriSign Compra aquí, Sitio 100% Seguro Privacidad y Seguridad Garantizada</p>
+        </div>
+        
+    </footer>
+
+
+
+    <!-- <script src="js/bootstrap.bundle.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
