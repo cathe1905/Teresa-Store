@@ -29,17 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
     // cuando recargue la pagina storage se actualizara en el carrito, el total y el contador
-    if(articulosCarrito.length > 0) {
-        articulosCarrito.forEach(articulo => {
-            total += (articulo.precio * articulo.cantidad)
-        })
-        totalCarrito.textContent= `Total a pagar: ${total} $`
-        contadorCarrito.textContent= articulosCarrito.length;
-    }    
-          carrito(); // esta funcion imprime los productos en carrito
-          if(total == 0) {
-            totalCarrito.textContent= 'Tu carrito esta vacío';
-        }
+    if (articulosCarrito.length > 0) {
+        total = calcularTotal();
+        totalCarrito.textContent = `Total a pagar: ${total} $`;
+        contadorCarrito.textContent = articulosCarrito.length;
+    }
+    carrito(); // Esta función imprime los productos en el carrito
+    if (total == 0) {
+        totalCarrito.textContent = 'Tu carrito está vacío';
+    }
+    
 
         
     // llamado de todos los productos existentes al dom, al recargar la pagina
@@ -257,10 +256,18 @@ document.addEventListener('DOMContentLoaded', () => {
          }
         
          // vamos acumulando en el total los precios de productos
-        total += (infoArticulo.precio * infoArticulo.cantidad)
+        total = calcularTotal();
         totalCarrito.textContent= `Total a pagar: ${total} $ `
 
          carrito(articulo); // imprime en el carrito este producto  
+    }
+
+    function calcularTotal() {
+        let totalCalculado = 0;
+        articulosCarrito.forEach(articulo => {
+            totalCalculado += articulo.precio * articulo.cantidad;
+        });
+        return totalCalculado.toFixed(2); // Redondeamos el total a dos decimales
     }
     
     
